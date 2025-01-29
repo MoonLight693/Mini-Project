@@ -50,6 +50,39 @@
             </section>
             <section id="Parts">
                 <h2>Parts</h2>
+                <style>
+                    * {
+                      box-sizing: border-box;
+                    }
+                    
+                    .img-container {
+                      float: left;
+                      width: 33.33%;
+                      padding: 5px;
+                    }
+                    
+                    .clearfix::after {
+                      content: "";
+                      clear: both;
+                      display: table;
+                    }
+                    </style>
+
+<h2>Images Side by Side</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="carsprings.jpg" alt="car springs" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="spark_plugs.jpg" alt="spark plugs" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="motor_oil.jpg" alt="motor oil" style="width:100%">
+  </div>
+</div>
+
                 <section id="More information">
                     <h3>Associated Manufacturers</h3>
                 </section>
